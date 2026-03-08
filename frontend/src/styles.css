@@ -1,0 +1,146 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  background: #f4f6f9;
+  color: #10233f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  gap: 12px;
+  padding: 12px 24px;
+  background: #10233f;
+}
+
+.topnav a {
+  color: #d7e7ff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.topnav a.router-link-active {
+  background: #1f64d1;
+  color: #ffffff;
+}
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(145deg, #e5eefb, #f8fafc);
+}
+
+.card {
+  width: min(900px, 100%);
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(16, 35, 63, 0.15);
+}
+
+.group {
+  margin-top: 20px;
+  border-top: 1px solid #d8e1ee;
+  padding-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #c6d3e6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button {
+  width: fit-content;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: #1f64d1;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.ok {
+  color: #0c8c3d;
+}
+
+.error {
+  color: #c62f2f;
+}
+
+.legal p {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #d8e1ee;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #eef4ff;
+}
+
+.json-box {
+  margin: 0;
+  padding: 12px;
+  background: #f6f8fc;
+  border: 1px solid #d8e1ee;
+  border-radius: 10px;
+  overflow-x: auto;
+  white-space: pre;
+}
